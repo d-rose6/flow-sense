@@ -1,0 +1,126 @@
+.historico-page {
+  min-height: 100vh;
+  background-color: #f8faff;
+  padding: 120px 30px 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.historico-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.historico-header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #050a30;
+  margin-bottom: 8px;
+}
+
+.historico-header p {
+  font-size: 15px;
+  color: #667099;
+}
+
+.historico-switch {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.historico-switch button {
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 2px solid #0d21fc;
+  background-color: white;
+  color: #0d21fc;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.historico-switch button:hover {
+  background-color: rgba(13, 33, 252, 0.06);
+}
+
+.historico-content {
+  max-width: 950px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 8px 28px rgba(13, 33, 252, 0.08);
+}
+
+.historico-content p {
+  font-size: 15px;
+  color: #46507a;
+  line-height: 1.6;
+}
+
+/* tablet */
+@media (max-width: 992px) {
+  .historico-page {
+    padding: 110px 24px 40px;
+  }
+
+  .historico-content {
+    padding: 28px;
+  }
+}
+
+/* celular */
+@media (max-width: 768px) {
+  .historico-page {
+    padding: 105px 18px 35px;
+  }
+
+  .historico-header h1 {
+    font-size: 28px;
+  }
+
+  .historico-header p {
+    font-size: 14px;
+  }
+
+  .historico-switch {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .historico-switch button {
+    width: 100%;
+  }
+
+  .historico-content {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .historico-content p {
+    font-size: 14px;
+  }
+}
+
+/* telas pequenas */
+@media (max-width: 480px) {
+  .historico-page {
+    padding: 100px 14px 30px;
+  }
+
+  .historico-header {
+    margin-bottom: 28px;
+  }
+
+  .historico-header h1 {
+    font-size: 24px;
+  }
+
+  .historico-content {
+    padding: 18px;
+  }
+}

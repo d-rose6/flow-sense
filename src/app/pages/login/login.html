@@ -1,0 +1,92 @@
+<main class="tela-login-fundo">
+  <div class="cartao-login">
+
+    <ng-container *ngIf="isLogin">
+      <div class="cabecalho-texto">
+        <h1>Bem-vindo(a) de volta</h1>
+        <p>Monitore seu fluxo de água em tempo real</p>
+      </div>
+
+      <form class="formulario">
+        <input
+          type="email"
+          placeholder="E-mail"
+          class="campo-input"
+        />
+
+        <div class="campo-senha">
+          <input
+            type="password"
+            placeholder="Senha"
+            class="campo-input"
+          />
+          <span class="icone-olho">👁️</span>
+        </div>
+
+       <a class="link-esqueceu-senha">
+        Esqueceu a senha?
+       </a>
+
+        <button type="submit" class="btn-primario">
+          Entrar
+        </button>
+
+        <button
+          type="button"
+          class="btn-secundario"
+          (click)="toggleMode()"
+        >
+          Cadastrar
+        </button>
+      </form>
+    </ng-container>
+
+    <ng-container *ngIf="!isLogin">
+      <div class="cabecalho-texto">
+        <h1>Criar Conta</h1>
+      </div>
+
+      <form class="formulario">
+        <input
+          type="text"
+          placeholder="Nome Completo"
+          class="campo-input"
+        />
+
+        <input
+          type="email"
+          placeholder="E-mail"
+          class="campo-input"
+        />
+
+        <input
+          type="password"
+          placeholder="Senha"
+          class="campo-input"
+        />
+
+        <input
+          type="password"
+          placeholder="Confirmar Senha"
+          class="campo-input"
+        />
+
+        <button
+          type="submit"
+          class="btn-primario btn-cadastrar-alternativo"
+        >
+          Cadastrar
+        </button>
+
+        <button
+          type="button"
+          class="btn-secundario"
+          (click)="toggleMode()"
+        >
+          Voltar para o Login
+        </button>
+      </form>
+    </ng-container>
+
+  </div>
+</main>

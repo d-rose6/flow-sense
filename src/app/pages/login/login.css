@@ -1,0 +1,208 @@
+.tela-login-fundo {
+  background: linear-gradient(135deg, #0d21fc 0%, #2c46ff 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 110px 20px 40px;
+  box-sizing: border-box;
+}
+
+.cartao-login {
+  width: 100%;
+  max-width: 460px;
+  background: rgba(28, 58, 255, 0.95);
+  border-radius: 28px;
+  padding: 40px 35px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+}
+
+.cartao-login .cabecalho-texto {
+  text-align: center;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.cartao-login .cabecalho-texto h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.cartao-login .cabecalho-texto p {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.cartao-login .formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cartao-login .formulario .campo-input {
+  width: 100%;
+  background: white;
+  border: none;
+  outline: none;
+  padding: 15px 18px;
+  border-radius: 999px;
+  color: #050a30;
+  font-size: 15px;
+  transition: 0.25s;
+  box-sizing: border-box;
+}
+
+.cartao-login .formulario .campo-input::placeholder {
+  color: #7a7a7a;
+}
+
+.cartao-login .formulario .campo-input:focus {
+  transform: translateY(-1px);
+}
+
+.cartao-login .formulario .campo-senha {
+  position: relative;
+}
+
+.cartao-login .formulario .campo-senha .campo-input {
+  padding-right: 46px;
+}
+
+.cartao-login .formulario .campo-senha .icone-olho {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.7;
+  font-size: 15px;
+}
+
+.cartao-login .formulario .campo-senha .icone-olho:hover {
+  opacity: 1;
+}
+
+.link-esqueceu-senha {
+  display: inline-block;
+  align-self: flex-end;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: -4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.link-esqueceu-senha:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.cartao-login .formulario button {
+  width: 100%;
+  padding: 15px 18px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.cartao-login .formulario .btn-primario,
+.cartao-login .formulario .btn-cadastrar-alternativo {
+  background: white;
+  color: #0d21fc;
+  border: none;
+}
+
+.cartao-login .formulario .btn-primario:hover,
+.cartao-login .formulario .btn-cadastrar-alternativo:hover {
+  transform: translateY(-2px);
+}
+
+.cartao-login .formulario .btn-secundario {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cartao-login .formulario .btn-secundario:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  .tela-login-fundo {
+    padding: 95px 18px 32px;
+  }
+
+  .cartao-login {
+    max-width: 430px;
+    padding: 34px 28px;
+  }
+
+  .cartao-login .cabecalho-texto h1 {
+    font-size: 27px;
+  }
+}
+
+/* celular */
+@media (max-width: 520px) {
+  .tela-login-fundo {
+    padding: 85px 14px 24px;
+    align-items: flex-start;
+  }
+
+  .cartao-login {
+    max-width: 100%;
+    padding: 28px 20px;
+    border-radius: 22px;
+  }
+
+  .cartao-login .cabecalho-texto {
+    margin-bottom: 20px;
+  }
+
+  .cartao-login .cabecalho-texto h1 {
+    font-size: 23px;
+  }
+
+  .cartao-login .cabecalho-texto p {
+    font-size: 13px;
+  }
+
+  .cartao-login .formulario {
+    gap: 14px;
+  }
+
+  .cartao-login .formulario .campo-input,
+  .cartao-login .formulario button {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  .link-esqueceu-senha {
+    font-size: 12px;
+  }
+}
+
+/* celulares pequenos */
+@media (max-width: 360px) {
+  .cartao-login {
+    padding: 24px 16px;
+  }
+
+  .cartao-login .cabecalho-texto h1 {
+    font-size: 20px;
+  }
+}

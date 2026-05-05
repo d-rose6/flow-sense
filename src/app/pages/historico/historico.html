@@ -1,0 +1,26 @@
+<section class="historico-page">
+  <div class="historico-header">
+    <h1>Histórico de Uso</h1>
+    <p>Acompanhe os dados enviados pelo dispositivo</p>
+  </div>
+
+  <div class="historico-switch">
+    <button type="button" (click)="toggleVisualizacao('grafico')">
+      Gráfico
+    </button>
+
+    <button type="button" (click)="toggleVisualizacao('registros')">
+      Registros
+    </button>
+  </div>
+
+  <div class="historico-content">
+    <ng-container *ngIf="mostrarGrafico">
+      <p>Aqui vai o gráfico</p>
+    </ng-container>
+
+    <ng-container *ngIf="!mostrarGrafico">
+      <p>Aqui vão os registros</p>
+    </ng-container>
+  </div>
+</section>
