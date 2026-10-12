@@ -1,0 +1,12 @@
+C:\Users\TwoNin9\Documents\backend\src\main\java\fatec\flowsense\backend\BackendApplication.java
+C:\Users\TwoNin9\Documents\backend\src\main\java\fatec\flowsense\backend\config\AdminUserConfig.java
+C:\Users\TwoNin9\Documents\backend\src\main\java\fatec\flowsense\backend\config\SecurityConfig.java
+C:\Users\TwoNin9\Documents\backend\src\main\java\fatec\flowsense\backend\controller\dto\CreateUserDto.java
+C:\Users\TwoNin9\Documents\backend\src\main\java\fatec\flowsense\backend\controller\dto\LoginRequest.java
+C:\Users\TwoNin9\Documents\backend\src\main\java\fatec\flowsense\backend\controller\dto\LoginResponse.java
+C:\Users\TwoNin9\Documents\backend\src\main\java\fatec\flowsense\backend\controller\TokenController.java
+C:\Users\TwoNin9\Documents\backend\src\main\java\fatec\flowsense\backend\controller\UserController.java
+C:\Users\TwoNin9\Documents\backend\src\main\java\fatec\flowsense\backend\entities\Role.java
+C:\Users\TwoNin9\Documents\backend\src\main\java\fatec\flowsense\backend\entities\User.java
+C:\Users\TwoNin9\Documents\backend\src\main\java\fatec\flowsense\backend\repository\RoleRepository.java
+C:\Users\TwoNin9\Documents\backend\src\main\java\fatec\flowsense\backend\repository\UserRepository.java
